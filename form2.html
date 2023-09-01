@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+form{
+    background-color: white;
+    border-radius: 2px;
+    margin: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+*{
+   
+}
+label{
+    color: yellow;
+    font-weight:  bold;
+    padding: 20px;
+}
+input[type=text]{
+    margin: 20px;
+    height:20px;
+    width: 500px;
+}
+input[type=email]{
+    margin: 20px;
+    height:20px;
+    width: 500px;
+}
+input[type=password]{
+    margin: 20px;
+    height:20px;
+    width: 500px;
+}
+input[type=submit]{
+    text-align: center;
+    margin: 100px;
+}
+</style>
+<body>
+   <form>
+<label for="account">Account</label><br>
+<input type="text" id="account" name="account" required=""><br>
+<input type="email" id="account" required=""><br>
+<input type="password" id="account" required=""><br>
+
+<label for="dob">Date of Birth </label>
+<label for="gender">Gender</label><br>
+<input type="date" id="dob" value="dob" name="dob" required=""><br>
+
+
+<input type="radio" id="Male" name="gender">
+<label for="Male">Male</label><br>
+
+<input type="radio" id="Female" name="gender">
+<label for="Female">Female</label><br>
+
+<label for="payment">Payment Details</label><br>
+<input type="radio" id="Credit Card" name="Payment Details">
+<label for="Credit Card">Credit Card</label><br>
+
+<input type="radio" id="visa" name="Payment Details">
+<label for="visa">Visa</label><br>
+
+<input type="text" id="payment" name="Payment Details" placeholder="Card Number"><br>
+<input type="number" id="payment" name="Payment Details"  placeholder="Card CVC" max="3">
+<input type="month" id="payment" name="Payment Details"  value="payment">
+<select>
+  <option value="2023">2023</option>  
+</select><br>
+  <label for="tandc">Terms and Conditions</label><br>
+  <input type="checkbox" id="tandc" name="tandc">
+  <label for="visa"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi corrupti ullam id aspernatur, laudantium, cupiditate, tempora ad earum modi vero eius voluptate quidem ipsam. Hic magni eaque ad expedita dignissimos!</p></label><br>
+   </form> 
+
+   <input type="submit">
+</body>
+</html>

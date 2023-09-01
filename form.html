@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        border: 10px solid pink;
+        background-color: lightblue;
+       
+    }
+    h4{
+        text-align: center;
+        font-size: 30px;
+    }
+    hr{
+        width:1200px ;
+    }
+    input[type=text]{
+        width: 1000px;
+        height: 30px;
+        margin: 20px;
+        border: none;
+    }
+    input[type=email]{
+        width: 1000px;
+        height: 30px;
+        margin: 20px;
+        border: none;
+       
+    }
+    input[type=password]{
+        width: 1000px;
+        height: 30px;
+        margin: 20px;
+        border: none;
+    }
+    label{
+        padding: 20px;
+    }
+    
+    textarea{
+        width:1000 ;
+        height:100px;
+        margin: 20px
+    }
+    input[type=button]{
+        width: 1000px;
+        height: 30px;
+        margin: 20px;
+        text-align: center;
+        color: white;
+        background-color: green;
+        border: none;
+    }
+    .font{
+        font-weight: bold;
+    }
+</style>
+<body>
+    <form>
+        <h4>Student Registration Form</h4>
+        <hr>
+        <label for="fname">Firstname</label><br>
+        <input type="text" id="fname" placeholder="Firstname"><br>
+
+        <label for="mname">Middlename</label><br>
+        <input type="text" id="mname" placeholder="Middlename"><br>
+
+        <label for="lname">Lastname</label><br>
+        <input type="text" id="lname" placeholder="Lastname"><br>
+
+        <label for="course">Course:</label>
+        <select id="course">
+            <option value="Course">Course</option>
+        </select><br>
+
+        <label for="gender">Gender: </label>
+
+        <input type="radio" id="male" value="male" name="gender">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" value="female" name="gender">
+        <label for="female">Female</label>
+        
+        <input type="radio" id="other" value="other" name="gender">
+        <label for="other">Other</label><br>
+
+        <label for="phone">Phone: </label><br>
+        <input type="text" id="phone" ><br>
+        <input type="text" id="phone" placeholder="phone no."><br>
+
+        <label for="address">Current Address:</label><br>
+        <textarea id="address" rows="" cols="135" placeholder="Current Address"></textarea><br>
+      
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter Email" class="font"><br>
+
+        <label for="pword">Password</label><br>
+        <input type="password" id="pword" name="pword" placeholder="Enter Paswsword" class="font"><br>
+
+        <label for="pword">Re-type Password</label><br>
+        <input type="password" id="pword" name="pword" placeholder="Re-type Password" class="font"><br>
+       
+        <input type="button" onclick="alert('Registered')" value="Register">
+
+        
+
+       
+    </form>
+</body>
+</html>
